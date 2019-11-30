@@ -7,11 +7,13 @@ import { NavComponent } from "./nav/nav.component";
 import { ContentComponent } from "./content/content.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HomeComponent } from "./home/home.component";
-
+import { FormsModule } from "@angular/forms";
 import { EmployeesComponent } from "./employees/employees.component";
 import { PositionsComponent } from "./positions/positions.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { HttpClientModule } from "@angular/common/http";
+import { EmployeeComponent } from "./employee/employee.component";
+import { PositionComponent } from "./position/position.component";
 
 @NgModule({
   declarations: [
@@ -22,9 +24,11 @@ import { HttpClientModule } from "@angular/common/http";
     HomeComponent,
     EmployeesComponent,
     PositionsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EmployeeComponent,
+    PositionComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

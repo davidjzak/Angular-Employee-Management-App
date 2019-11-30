@@ -14,4 +14,17 @@ export class PositionService {
       "http://pure-citadel-90161.herokuapp.com" + "/positions"
     );
   }
+
+  savePosition(position: Position) {
+    return this.http.put<any>(
+      "ttp://pure-citadel-90161.herokuapp.com/position/" + position._id,
+      position
+    );
+  }
+
+  getPosition(id: string): Observable<Position[]> {
+    return this.http.get<Position[]>(
+      "ttp://pure-citadel-90161.herokuapp.com/position/" + id
+    );
+  }
 }
