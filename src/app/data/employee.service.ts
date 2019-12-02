@@ -12,20 +12,20 @@ export class EmployeeService {
 
   getEmployees(): Observable<Employee[]> {
     return this.http.get<Employee[]>(
-      "http://pure-citadel-90161.herokuapp.com" + "/employees"
+      "https://pure-citadel-90161.herokuapp.com" + "/employees"
     );
   }
 
   saveEmployee(employee: EmployeeRaw) {
     return this.http.put<any>(
-      "http://pure-citadel-90161.herokuapp.com" + employee._id,
+      "https://pure-citadel-90161.herokuapp.com" + employee._id,
       employee
     );
   }
 
   getEmployee(id: number): Observable<EmployeeRaw[]> {
     return this.http.get<EmployeeRaw[]>(
-      "http://pure-citadel-90161.herokuapp.com/employee-raw/" + id
+      "https://pure-citadel-90161.herokuapp.com/employee-raw/" + id
     );
   }
 }

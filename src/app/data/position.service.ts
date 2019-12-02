@@ -11,20 +11,20 @@ export class PositionService {
 
   getPositions(): Observable<Position[]> {
     return this.http.get<Position[]>(
-      "http://pure-citadel-90161.herokuapp.com" + "/positions"
+      "https://pure-citadel-90161.herokuapp.com" + "/positions"
     );
   }
 
   savePosition(position: Position) {
     return this.http.put<any>(
-      "ttp://pure-citadel-90161.herokuapp.com/position/" + position._id,
+      "https://pure-citadel-90161.herokuapp.com/position/" + position._id,
       position
     );
   }
 
   getPosition(id: string): Observable<Position[]> {
     return this.http.get<Position[]>(
-      "ttp://pure-citadel-90161.herokuapp.com/position/" + id
+      "https://pure-citadel-90161.herokuapp.com/position/" + id
     );
   }
 }
