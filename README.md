@@ -27,9 +27,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Screenshots of App
+
 Front page
-![](images/as6front)
+
+![](images/as6front.PNG)
+
 Employees Page
-![](images/as6employees)
+
+![](images/as6employees.PNG)
+
 Employees Page while using search function
-![](images/as6search)
+
+![](images/as6search.PNG)
